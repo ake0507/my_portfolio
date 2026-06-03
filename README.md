@@ -29,11 +29,12 @@ Then visit `http://localhost:8080`.
 
 ## Deploy (GitHub Pages)
 
-Pushes to `main` deploy the `web/` folder via GitHub Actions.
+Pushes to `main` publish the `web/` folder to the `gh-pages` branch via GitHub Actions.
 
-1. Open **Settings → Pages** on the repo
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**
-3. After the workflow runs, the site is live at **https://ake0507.github.io/my_portfolio/**
+1. Open **Settings → Pages**: https://github.com/ake0507/my_portfolio/settings/pages
+2. **Source:** Deploy from a branch
+3. **Branch:** `gh-pages` → `/ (root)` → Save
+4. Live site: **https://ake0507.github.io/my_portfolio/**
 
 ## Structure
 
