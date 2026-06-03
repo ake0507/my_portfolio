@@ -59,6 +59,17 @@
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
+      const name = contactForm.querySelector("#name").value.trim();
+      const email = contactForm.querySelector("#email").value.trim();
+      const service = contactForm.querySelector("#service").value.trim();
+      const message = contactForm.querySelector("#message").value.trim();
+      const recipient = "akliludesalegn3@gmail.com";
+      const subject = `New message from ${name || "website visitor"}`;
+      const body = `Name: ${name}\nEmail: ${email}\nService: ${service || "Not specified"}\n\nMessage:\n${message}`;
+      const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailtoLink;
+
       const successMsg = contactForm.querySelector(".form-success");
       if (successMsg) {
         successMsg.classList.add("show");
