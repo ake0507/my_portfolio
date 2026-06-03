@@ -27,6 +27,14 @@ npx serve web
 
 Then visit `http://localhost:8080`.
 
+## Deploy (GitHub Pages)
+
+Pushes to `main` deploy the `web/` folder via GitHub Actions.
+
+1. Open **Settings → Pages** on the repo
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**
+3. After the workflow runs, the site is live at **https://ake0507.github.io/my_portfolio/**
+
 ## Structure
 
 ```
