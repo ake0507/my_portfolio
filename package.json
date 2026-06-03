@@ -1,0 +1,11 @@
+{
+  "name": "my_portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve web",
+    "deploy:vercel": "vercel --cwd web --prod"
+  },
+  "devDependencies": {
+    "vercel": "^44.0.0"
+  }
+}

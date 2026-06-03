@@ -27,14 +27,26 @@ npx serve web
 
 Then visit `http://localhost:8080`.
 
-## Deploy (GitHub Pages)
+## Deploy
+
+### Vercel (recommended)
+
+1. Import the repo: https://vercel.com/new/import?s=https://github.com/ake0507/my_portfolio
+2. Set **Root Directory** to `web` (click Edit → enter `web`)
+3. Leave **Build Command** empty, **Output Directory** as default
+4. Deploy — every push to `main` auto-deploys
+
+Or from your machine (after `npx vercel login`):
+
+```bash
+npm run deploy:vercel
+```
+
+### GitHub Pages
 
 Pushes to `main` publish the `web/` folder to the `gh-pages` branch via GitHub Actions.
 
-1. Open **Settings → Pages**: https://github.com/ake0507/my_portfolio/settings/pages
-2. **Source:** Deploy from a branch
-3. **Branch:** `gh-pages` → `/ (root)` → Save
-4. Live site: **https://ake0507.github.io/my_portfolio/**
+Live site: **https://ake0507.github.io/my_portfolio/**
 
 ## Structure
 
